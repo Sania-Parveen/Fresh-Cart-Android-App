@@ -53,3 +53,7 @@ Sync Gradle & Run the app
 
 This repository does not include google-services.json for security reasons.
 Please add your own Firebase configuration file before running the project.
+
+Screenshots 
+![1](https://github.com/user-attachments/assets/0c314706-38de-4578-89be-d47f23cf7a00)
+
