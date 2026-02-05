@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Fresh Cart</string>
+
+        <string name="fruits">Fresh Fruits</string>
+        <string name="vegetables">Fresh Vegetables</string>
+        <string name="packaged">Packaged Food</string>
+        <string name="stationary">Stationary</string>
+        <string name="beverages">Beverages</string>
+        <string name="dairy">Dairy Items</string>
+        <string name="bath">Bath And Body</string>
+        <string name="kitchen">Kitchen Items</string>
+        <string name="meat">Meat</string>
+        <string name="noodles">Noodles</string>
+
+
+
+
+</resources>

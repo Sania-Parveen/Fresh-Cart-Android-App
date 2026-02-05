@@ -1,0 +1,103 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.google.gms.google.services)
+
+    /** serialisation plugin */
+    id("org.jetbrains.kotlin.plugin.serialization") version "1.9.22"
+    //id("com.google.gms.google-services")
+}
+android {
+    namespace = "com.example.freshcartapp"
+    compileSdk = 35
+
+    defaultConfig {
+        applicationId = "com.example.freshcartapp"
+        minSdk = 24
+        targetSdk = 34
+        versionCode = 1
+        versionName = "1.0"
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            isMinifyEnabled = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = "11"
+    }
+    buildFeatures {
+        compose = true
+    }
+}
+
+dependencies {
+
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.activity.compose)
+    implementation(platform(libs.androidx.compose.bom))
+    implementation(libs.androidx.ui)
+    implementation(libs.androidx.ui.graphics)
+    implementation(libs.androidx.ui.tooling.preview)
+    implementation(libs.androidx.material3)
+    implementation(libs.firebase.database.ktx)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
+    androidTestImplementation(platform(libs.androidx.compose.bom))
+    androidTestImplementation(libs.androidx.ui.test.junit4)
+    debugImplementation(libs.androidx.ui.tooling)
+    debugImplementation(libs.androidx.ui.test.manifest)
+
+
+    // OkHttp
+    implementation(libs.okhttp)
+
+
+// Kotlinx Serialization
+    implementation ("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0")
+
+
+    // Retrofit with Kotlinx Serialization
+    implementation(libs.retrofit2.kotlinx.serialization.converter)
+    //implementation(libs.retrofit2.kotlinx.serialization.converter.v100)
+
+    // OkHttp
+    implementation(libs.okhttp)
+
+    // Coil
+    implementation(libs.coil.compose)
+
+    // DataStore
+    implementation(libs.androidx.datastore)
+    //implementation(libs.androidx.datastore.preferences)
+
+
+    implementation("com.google.firebase:firebase-analytics")
+
+    implementation(libs.androidx.navigation.compose.v260)
+    //implementation("com.google.firebase:firebase-auth")
+
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.7")
+    implementation("com.squareup.retrofit2:retrofit:2.11.0")
+    implementation("com.squareup.retrofit2:converter-scalars:2.11.0")
+
+    // Import the BoM for the Firebase platform
+    implementation(platform(libs.firebase.bom))
+
+    implementation(libs.google.firebase.auth)
+
+}
