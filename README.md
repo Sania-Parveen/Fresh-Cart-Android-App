@@ -1,59 +1,56 @@
-🛒 Fresh Cart – Grocery Delivery Android App
+Fresh Cart – Grocery Delivery Android App
+- A modern grocery delivery Android application built using Kotlin and Jetpack Compose, focused on real-time data updates, secure authentication, and clean scalable architecture.
 
-Fresh Cart is a modern grocery delivery Android application designed to provide a seamless shopping experience with real-time data updates, secure authentication, and an intuitive UI built using Jetpack Compose.
+Overview
+- Fresh Cart provides a seamless grocery shopping experience by enabling users to browse products, manage carts, and place orders with real-time synchronization using Firebase. The application follows MVVM architecture to ensure maintainability and scalability.
 
-🚀 Features
+Key Highlights
 
-🛍️ Browse grocery items with real-time updates
+- Real-time grocery shopping experience
+- Secure user authentication with Firebase
+- Scalable MVVM architecture
+- Modern UI built with Jetpack Compose
+- Live product and order tracking
 
-🔐 Secure user authentication using Firebase Authentication
+Features
 
-🛒 Add items to cart and manage orders
+- User authentication using Firebase Authentication
+- Add items to cart and manage orders
+- Real-time database integration for products and orders
+- Clean separation of concerns using MVVM
+- Responsive and modern UI design
 
-📦 Real-time database integration for products and orders
+Tech Stack
 
-🧩 Clean architecture using MVVM (Model–View–ViewModel)
+- Language: Kotlin
+- UI: Jetpack Compose
+- Architecture: MVVM
+- Backend & Authentication: Firebase Realtime Database, Firebase Authentication
+- Networking: Retrofit
+- Tools: Android Studio, Git, GitHub
 
-🎨 Modern and responsive UI built with Jetpack Compose
+Getting Started
 
-🛠️ Tech Stack
-
-Language: Kotlin
-
-UI: Jetpack Compose
-
-Architecture: MVVM
-
-Backend & Auth: Firebase Realtime Database, Firebase Authentication
-
-Networking: Retrofit
-
-Tools: Android Studio, Git, GitHub
-
-⚙️ Setup Instructions
-
-Clone the repository
-
+- Clone the Repository,
 git clone https://github.com/Sania-Parveen/Fresh-Cart-Android-App.git
 
+- Open in Android Studio
+- Open Android Studio
+- Select Open an existing project
+- Choose the cloned repository
 
-Open in Android Studio
+Firebase Setup
+- Create a Firebase project
+- Download google-services.json
+- Place it inside the app/ directory
+- Run the App
+- Sync Gradle
+- Click Run to launch the app
 
-Add Firebase configuration
+Firebase Configuration
 
-Create a Firebase project
+- For security reasons, the google-services.json file is not included in this repository.
+- Please add your own Firebase configuration file before running the project.
 
-Download google-services.json
-
-Place it inside the app/ directory
-
-Sync Gradle & Run the app
-
-🔒 Firebase Configuration Note
-
-This repository does not include google-services.json for security reasons.
-Please add your own Firebase configuration file before running the project.
-
-Screenshots 
-![1](https://github.com/user-attachments/assets/0c314706-38de-4578-89be-d47f23cf7a00)
-
+Screenshots
+<p align="center"> <img src="https://github.com/user-attachments/assets/4fbeb800-63b9-4bba-bba8-dc59a0486e53" width="45%" /> <img src="https://github.com/user-attachments/assets/2901a341-d3ca-47d5-8d2a-f32f4d37cbc8" width="45%" /> </p>
